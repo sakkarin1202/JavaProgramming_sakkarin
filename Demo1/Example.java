@@ -4,8 +4,8 @@ public class Example {
 		myMethod();
 	}
 
-	public static void myMethod(){
+	public static void myMethod() {
 		System.out.println("Sakkarin Rodjit");
-		System.out.println (x) "65/45"
+		System.out.println("65/45");
 	}
 }
