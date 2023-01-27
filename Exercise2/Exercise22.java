@@ -6,6 +6,7 @@ public class Exercise22 {
         Scanner scan = new Scanner(System.in);
         System.out.print("Input first number:");
         int number = scan.nextInt();
+        scan.close();
         for (int i = 1; i <= 12; i++) {
             System.out.println(number + " x " + i + " = " + number * i);
         }
