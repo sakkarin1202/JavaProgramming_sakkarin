@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Execrise47 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        System.out.println("a =" + a);
+        System.out.println("b =" + b);
+        if (a == b) {
+            System.out.println("a = b");
+        } else if (a > b) {
+            System.out.println("จำนวนที่ a มากกว่า");
+        } else {
+            System.out.println("จำนวนที่ b มากกว่า");
+        }
+
+    }
+}
