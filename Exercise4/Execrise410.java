@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class Execrise410 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.print("Enter Number Midterm :");
         int a = scan.nextInt();
+        System.out.print("Enter Number Final:");
         int b = scan.nextInt();
         System.out.println("คะแนนสอบกลางภาค = " + a);
         System.out.println("คะแนนสอบปลายภาค = " + b);
@@ -25,5 +27,6 @@ public class Execrise410 {
         } else {
             System.out.println("E");
         }
+
     }
 }
