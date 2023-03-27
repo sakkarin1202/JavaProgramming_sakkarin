@@ -56,23 +56,43 @@ public class Exercise6 {
 
     }
 
-    public void isOdd(int num, Scanner){
-        do{
-            System.out.println("กรุณากรอกจำนวนเลขคีย์บอร์ด");
-             userInput = input.nextInt();
-             if(userInput)
+    public void isOdd(int num, Scanner input) {
+        while (num % 2 == 0) {
+            System.out.println(" this not a odd number ");
+            System.out.print("Please, enter odd number : ");
+            num = input.nextInt();
         }
+        System.out.println("this odd number ");
     }
 
-    public static void main(String[] args) {
-        Exercise6 ex = new Exercise6();
-        Scanner input = new Scanner(System.in);
-        System.out.println("Please, enter a number: ");
-        int num = input.nextInt();
-        // ex.printType1(num);
-        // ex.printType2(num);
-        // ex.isPositive(num, input);
+    public void isDivideBy(int num, Scanner input) {
+        System.out.print("Please, enter desired amount : ");
+        int n = input.nextInt();
+        System.out.print("Please, enter number for mod : ");
+        int x = input.nextInt();
+        String sum = "";
+        for (int i = 1; i <= n; i++) {
+            if (i % x == 0) {
+                if (sum == "") {
+                    sum = sum + i;
+                } else {
+                    sum = sum + "," + i;
+                }
+            }
+        }
+        System.out.println(sum);
     }
+
+    // public static void main(String[] args) {
+    // Exercise6 ex = new Exercise6();
+    // Scanner input = new Scanner(System.in);
+    // System.out.println("Please, enter a number: ");
+    // int num = input.nextInt();
+    // ex.printType1(num);
+    // ex.printType2(num);
+    // ex.isPositive(num, input);
+    // ex.isOdd(num, input);
+    // }
 
     // public static void main(String[] args) {
     // Exercise6 ex = new Exercise6();
@@ -83,4 +103,11 @@ public class Exercise6 {
     // // ex.checkVowel(w);
     // ex.checkChar(w);
     // }
+
+    public static void main(String[] args) {
+        Exercise6 ex = new Exercise6();
+        Scanner input = new Scanner(System.in);
+        ;
+        ex.isDivideBy(0, input);
+    }
 }
